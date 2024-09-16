@@ -1,17 +1,19 @@
-function scuberGreetingForFeet(distance) {
-  if (distance <= 400) {
-    return "This one is on me!";
-  } else if (distance > 400 && distance <= 2000) {
-    return "That will be twenty bucks.";
-  } else if (distance > 2000 && distance <= 2500) {
-    return "I will gladly take your thirty bucks."; // Added semicolon here
-  } else {
-    return "No can do.";
+function scuberGreetingForFeet(feet) {
+  let greeting;
+  if (feet <= 400) {
+    greeting = "This one is on me!";
+  } else if (feet > 400 && feet < 2000) {
+  greeting = "That will be twenty bucks.";
+  } else if (feet > 2000 && feet <=2500) {
+    greeting ="I will gladly take your thirty bucks."; // Added semicolon here
+  } else if (feet>2500 ){
+    greeting = "No can do.";
   }
+  return greeting
 }
 
 function ternaryCheckCity(city) {
-  return city === 'NYC' ? "Ok, sounds good." : "No go.";
+ return city === 'NYC' ? "Ok, sounds good." : "No go.";
 }
 
 function switchOnCharmFromTip(tip) {
